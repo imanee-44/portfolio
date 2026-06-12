@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imane Elbouamri — Développeuse Web Junior</title>
+  <meta name="description" content="Portfolio d'Imane Elbouamri, développeuse web junior à Casablanca. JavaScript, Node.js, MySQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Outfit:wght@300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <span class="preloader__mark">IE</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">Imane<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Winding SVG path, drawn on scroll -->
+    <div class="path-wrap" aria-hidden="true">
+      <svg class="path-svg" viewBox="0 0 1000 5200" preserveAspectRatio="none" fill="none">
+        <path
+          id="scroll-path"
+          d="M 500 60
+             C 500 380, 160 420, 150 760
+             C 142 1080, 860 1120, 858 1480
+             C 856 1840, 170 1880, 175 2260
+             C 180 2640, 845 2660, 840 3040
+             C 835 3420, 190 3460, 200 3840
+             C 210 4220, 800 4260, 790 4620
+             C 782 4920, 500 4980, 500 5200"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          vector-effect="non-scaling-stroke"
+        />
+      </svg>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <p class="hero__kicker" data-fade>Portfolio — Casablanca, Maroc</p>
+      <h1 class="hero__title">
+        <span class="hero__line" id="hero-line-1">Imane</span>
+        <span class="hero__line hero__line--accent" id="hero-line-2">Elbouamri</span>
+      </h1>
+      <svg class="hero__flourish" viewBox="0 0 420 40" fill="none" aria-hidden="true">
+        <path id="flourish-path" d="M 8 28 C 110 6, 210 38, 300 18 C 350 8, 395 22, 412 14"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+      <p class="hero__sub" data-fade>
+        Développeuse web junior — j'apprends vite, je code avec soin et je construis
+        des expériences web modernes en <em>JavaScript</em> &amp; <em>Node.js</em>.
+      </p>
+      <div class="hero__scroll" data-fade>
+        <span></span>
+        Défiler pour découvrir
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section about" id="apropos">
+      <p class="section__index">01</p>
+      <h2 class="section__title">À propos</h2>
+      <div class="about__grid">
+        <div class="about__text" data-reveal>
+          <p class="about__lead">
+            Étudiante en <strong>DTS développement informatique</strong> à l'IFIAG de
+            Casablanca, je transforme ma rigueur scientifique en code propre et utile.
+          </p>
+          <p>
+            Mon parcours m'a appris la méthode et le sens de l'analyse : j'ai développé
+            un système d'authentification web de zéro lors de mon stage à l'ONP, et
+            j'accompagne des élèves en soutien scolaire depuis deux ans — preuve que je
+            sais autant expliquer que construire. Curieuse des outils d'IA
+            (Claude, GitHub Copilot, Gemini), je les intègre dans ma façon de travailler
+            pour apprendre et livrer plus vite.
+          </p>
+        </div>
+        <aside class="about__aside">
+          <div class="about__card" data-reveal>
+            <h3>Langues</h3>
+            <ul class="lang-list">
+              <li><span>Arabe</span><i>Langue maternelle</i></li>
+              <li><span>Français</span><i>Bilingue</i></li>
+              <li><span>Anglais</span><i>Avancé</i></li>
+            </ul>
+          </div>
+          <div class="about__card" data-reveal>
+            <h3>Centres d'intérêt</h3>
+            <p class="about__interests">Sports de combat · Technologie · Mode</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee-track">
+        <span>JavaScript — Node.js — MySQL — Git &amp; GitHub — Analyse de données — Outils IA —&nbsp;</span>
+        <span>JavaScript — Node.js — MySQL — Git &amp; GitHub — Analyse de données — Outils IA —&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Compétences -->
+    <section class="section skills" id="competences">
+      <p class="section__index">02</p>
+      <h2 class="section__title">Compétences</h2>
+      <div class="skills__grid">
+        <article class="skill-card" data-reveal>
+          <span class="skill-card__num">a</span>
+          <h3>Développement web</h3>
+          <p>JavaScript, Node.js, MySQL. Conception et développement de fonctionnalités web, du front à la base de données.</p>
+        </article>
+        <article class="skill-card" data-reveal>
+          <span class="skill-card__num">b</span>
+          <h3>Outils &amp; versioning</h3>
+          <p>Git &amp; GitHub au quotidien. Maîtrise d'Excel et Word pour la documentation et le reporting.</p>
+        </article>
+        <article class="skill-card" data-reveal>
+          <span class="skill-card__num">c</span>
+          <h3>Données &amp; analyse</h3>
+          <p>Modélisation et analyse de données, rédaction de documents techniques clairs et structurés.</p>
+        </article>
+        <article class="skill-card" data-reveal>
+          <span class="skill-card__num">d</span>
+          <h3>IA appliquée</h3>
+          <p>Utilisation avancée de Claude, GitHub Copilot et Gemini pour accélérer le développement et l'apprentissage.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section class="section journey" id="parcours">
+      <p class="section__index">03</p>
+      <h2 class="section__title">Parcours</h2>
+
+      <h3 class="journey__subtitle" data-fade>Expérience</h3>
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__date">Sept. — Oct. 2025</span>
+          <div class="timeline__body">
+            <h4>Stage développement web — ONP</h4>
+            <p class="timeline__org">Office National des Pêches, Casablanca</p>
+            <p>Développement d'un système d'authentification web complet, conçu et codé de zéro.</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__date">Sept. 2024 — Nov. 2025</span>
+          <div class="timeline__body">
+            <h4>Soutien scolaire particulier</h4>
+            <p class="timeline__org">Collège &amp; lycée</p>
+            <p>Accompagnement d'élèves en français, maths et anglais — avec une nette amélioration de leurs résultats.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="journey__subtitle" data-fade>Formation</h3>
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__date">2024 — 2027</span>
+          <div class="timeline__body">
+            <h4>DTS développement informatique</h4>
+            <p class="timeline__org">IFIAG, Casablanca</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__date">2024 — 2025</span>
+          <div class="timeline__body">
+            <h4>1<sup>re</sup> année universitaire</h4>
+            <p class="timeline__org">FSAC</p>
+          </div>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__date">2023 — 2024</span>
+          <div class="timeline__body">
+            <h4>Bac sciences physiques, option français</h4>
+            <p class="timeline__org">Nour Elmohammedia, Marrakech</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="journey__subtitle" data-fade>Certifications</h3>
+      <ul class="certs">
+        <li class="cert" data-reveal>
+          <h4>Python Essentials 1</h4>
+          <p>Cisco Networking Academy — obtenue en octobre 2025</p>
+        </li>
+        <li class="cert" data-reveal>
+          <h4>JavaScript Essentials 1</h4>
+          <p>Cisco Networking Academy — obtenue en mai 2026</p>
+        </li>
+        <li class="cert" data-reveal>
+          <h4>JavaScript Essentials 2</h4>
+          <p>Cisco Networking Academy — en cours</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <p class="section__index">04</p>
+      <h2 class="contact__title">Travaillons<br /><em>ensemble.</em></h2>
+      <a class="contact__email" href="mailto:imaaneb.03@gmail.com" data-fade>imaaneb.03@gmail.com</a>
+      <div class="contact__links" data-fade>
+        <a href="https://github.com/imanee-44" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/imane-elbouamri-3823b6303" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <footer class="footer">
+        <p>© 2026 Imane Elbouamri — Casablanca</p>
+        <p>Conçu avec soin · GSAP</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
